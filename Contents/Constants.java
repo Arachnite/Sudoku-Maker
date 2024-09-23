@@ -8,4 +8,7 @@ public class Constants {
     //Declares the difficulty variables
     public static String difficultyFinal = "0";
     public static String difficultyInput;
+
+    //Numbers used in relative to create the board
+    public static int numbersGiven;
 }

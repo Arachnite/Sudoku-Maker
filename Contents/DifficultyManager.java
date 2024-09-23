@@ -1,11 +1,11 @@
 
 import java.util.Scanner;
 
-public class DifficultyManager {
+public class DifficultyManager extends Constants{
 
     //I don't know why tf I need this
     public static void main(String[] args){
-        
+
     }
 
     //Gets the difficulty of the Sudoku Board
@@ -23,7 +23,7 @@ public class DifficultyManager {
 
     //Reads the difficulty written by the user via terminal and returns difficultyInput
     public static String difficultyReader(Scanner sc){
-        String difficultyInput = sc.nextLine().toUpperCase();
+        difficultyInput = sc.nextLine().toUpperCase();
         return difficultyInput;
     }
 
