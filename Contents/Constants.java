@@ -19,7 +19,7 @@ public class Constants {
 
     //All Positions
 
-    public static int boardArray[][] = new int[3][3];
+    public static int boardArray[][] = new int[9][9];
 
     //Physical Board
     public static String theBoard;
