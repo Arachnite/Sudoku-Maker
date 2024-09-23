@@ -7,6 +7,7 @@ public class boardMaker extends Constants{
         difficultyFinal = difficultyFinal.substring(0, 1).toUpperCase() + difficultyFinal.substring(1, difficultyFinal.length());
 
         numbersGiven = DifficultyManager.getNumbersGiven(numbersGiven);
+        System.out.println(theBoard);
     }
 
     
