@@ -45,4 +45,16 @@ public class DifficultyManager extends Constants{
         }
         return null;
     }
+
+    //Gets the numbers given
+    public static int getNumbersGiven(int numbersGiven){
+        if(difficultyFinal.equals("Easy")){
+            numbersGiven = (int)(Math.random() * (35 - 31) + 31);
+        } else if(difficultyFinal.equals("Medium")){
+            numbersGiven = (int)(Math.random() * (30 - 26) + 26);
+        } else if(difficultyFinal.equals("Hard")){
+            numbersGiven = (int)(Math.random() * (25 - 20) + 20);
+        }
+        return numbersGiven;
+    }
 }
