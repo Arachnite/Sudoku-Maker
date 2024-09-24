@@ -40,6 +40,10 @@ public class Constants {
         System.out.println(x);
     }
 
+    public static void fflush(String x){
+        System.out.print(x);
+    }
+
     //Amount of numbers given
     public static int numbersGiven;
 
