@@ -42,9 +42,9 @@ public class boardMaker extends Constants{
     public static void printBoard(){
         for (int i = 0; i < theBoard.length; i++) {
             for (int o = 0; o < theBoard[i].length; o++) {
-                System.out.print(theBoard[i][o] + " ");
+                printf(theBoard[i][o] + " ");
                 if (o == 2 || o == 5) {
-                    System.out.print("| ");
+                    printf("| ");
                 }
             }
             printf("");
