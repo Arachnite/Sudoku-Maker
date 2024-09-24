@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class StartScreen extends Constants{
     
     public static void printStartScreen(){
-        for (int i = 0; i <= startMessage.length; i++) {
+        for (int i = 0; i <= startMessage.length - 1; i++) {
             printf(startMessage[i]);
         }
     }

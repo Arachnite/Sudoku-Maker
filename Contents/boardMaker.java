@@ -8,6 +8,9 @@ public class boardMaker extends Constants{
         StartScreen.printStartScreen();
         while (startString.equals("0")){
             startString = StartScreen.checkStart();
+            if (startString != "0") {
+                break;
+            }
         }
 
         if (startString.equals("START")){
@@ -15,7 +18,7 @@ public class boardMaker extends Constants{
             difficultyFinal = difficultyFinal.substring(0, 1).toUpperCase() + difficultyFinal.substring(1, difficultyFinal.length());
 
             numbersGiven = getNumbersGiven(difficultyFinal);
-            printBoard(theBoard);
+            printBoard();
         }
     }
 
@@ -36,7 +39,7 @@ public class boardMaker extends Constants{
         }
     }
 
-    public static void printBoard(int[][] theBoard){
+    public static void printBoard(){
         for (int i = 0; i < theBoard.length; i++) {
             for (int o = 0; o < theBoard[i].length; o++) {
                 System.out.print(theBoard[i][o] + " ");
@@ -44,9 +47,9 @@ public class boardMaker extends Constants{
                     System.out.print("| ");
                 }
             }
-            System.out.println();
+            printf("");
             if(i == 2 || i == 5) {
-                System.out.println("- - - + - - - + - - -");
+                printf("- - - + - - - + - - -");
             }
         }
     }

@@ -19,10 +19,12 @@ public class Main {
             }
             
         }
+
     }
 
     // Compare a two values in the 2D array
     public static boolean compareTwoValues(int x1, int y1, int x2, int y2) {
         return twoDArr[x1][y1] == twoDArr[x2][y2];
     }
+
 }
