@@ -6,15 +6,14 @@ public class DifficultyManager extends Constants{
 
     //Gets the difficulty of the Sudoku Board
     public static String getDifficulty(String difficultyInput, String difficultyFinal) {
-        System.out.println("Select a difficulty (Easy, Medium, Hard):");
-        while (difficultyFinal.equals("0")){
+        printf("Select a difficulty (Easy, Medium, Hard):");
+        while (true){
             difficultyInput = difficultyReader(sc);
             difficultyFinal = difficultyFinalConstant(difficultyInput);
             if (difficultyFinal != "0"){
                 return difficultyFinal;
             }
         }
-        return null;
     }
 
     //Reads the difficulty written by the user via terminal and returns difficultyInput
@@ -31,8 +30,8 @@ public class DifficultyManager extends Constants{
             if (Arrays.asList(difficultyTypes).contains(difficultyInput)) {
                 return difficultyInput;
             } else {
-                System.out.println("Please select a valid difficulty:");
-                System.out.println("Easy, Medium, Hard");
+                printf("Please select a valid difficulty:");
+                printf("Easy, Medium, Hard");
                 return "0";
             }
         }

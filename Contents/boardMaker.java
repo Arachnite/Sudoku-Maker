@@ -4,11 +4,18 @@
 
 public class boardMaker extends Constants{
     public static void main(String[] args){
-        difficultyFinal = DifficultyManager.getDifficulty(difficultyInput, difficultyFinal).toLowerCase();
-        difficultyFinal = difficultyFinal.substring(0, 1).toUpperCase() + difficultyFinal.substring(1, difficultyFinal.length());
 
-        numbersGiven = getNumbersGiven(difficultyFinal);
-        System.out.println(theBoard);
+        for(int i = 0, i <= )
+            printf(startMessage);
+        startString = sc.nextLine().toUpperCase();
+
+        if (startString.equals("START")){
+            difficultyFinal = DifficultyManager.getDifficulty(difficultyInput, difficultyFinal).toLowerCase();
+            difficultyFinal = difficultyFinal.substring(0, 1).toUpperCase() + difficultyFinal.substring(1, difficultyFinal.length());
+
+            numbersGiven = getNumbersGiven(difficultyFinal);
+            printf(theBoard);
+        }
     }
 
     //Gets the amount of numbers that will be given
