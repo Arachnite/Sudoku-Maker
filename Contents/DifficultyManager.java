@@ -30,7 +30,7 @@ public class DifficultyManager extends Constants{
             if (Arrays.asList(difficultyTypes).contains(difficultyInput)) {
                 return difficultyInput;
             } else {
-                printf("Please select a valid difficulty:");
+                printf("\nPlease select a valid difficulty:");
                 printf("Easy, Medium, Hard");
                 return "0";
             }

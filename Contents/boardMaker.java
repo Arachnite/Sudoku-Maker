@@ -2,8 +2,8 @@
 //import java.util.Scanner;
 //import java.util.Arrays;
 
-public class boardMaker extends Constants{
-    public static void main(String[] args){
+public class boardMaker extends Constants {
+    public static void main(String[] args) throws InterruptedException {
 
         StartScreen.printStartScreen();
         while (startString.equals("0")){
@@ -13,7 +13,7 @@ public class boardMaker extends Constants{
             }
         }
 
-        if (startString.equals("START")){
+        if (startString.equals("START")) {
             difficultyFinal = DifficultyManager.getDifficulty(difficultyInput, difficultyFinal).toLowerCase();
             difficultyFinal = difficultyFinal.substring(0, 1).toUpperCase() + difficultyFinal.substring(1, difficultyFinal.length());
 
@@ -39,7 +39,7 @@ public class boardMaker extends Constants{
         }
     }
 
-    public static void printBoard(){
+    public static void printBoard() {
         printf("\n   1 2 3   4 5 6   7 8 9\n");
         for (int i = 0; i < theBoard.length; i++) {
             fflush(i + 1+ "  ");
