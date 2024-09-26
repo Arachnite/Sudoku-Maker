@@ -12,9 +12,13 @@ public class Constants {
     public static String[] startMessage = {
         ("Welcome to Sudoku \n"),
         ("Rules:"),
+        ("Fill in the 3x3 by 3x3 box with all the numbers"),
         ("Numbers may not repeat per Row, Column or Box"),
         ("Select a difficulty first, and reply with the position and number wanted"),
-        ("For example: A1 5\nThe First Letter = Row\nThe Second Number = Column\nLast Number = Number wanted to be Replaced\n"),
+        ("For example: 11 5"),
+        ("The First Number = Row"),
+        ("The Second Number = Column"),
+        ("Last Number = Number wanted to be Replaced\n"),
         ("Please type start to continue:")
     };
 
@@ -41,6 +45,10 @@ public class Constants {
     }
 
     public static void fflush(String x){
+        System.out.print(x);
+    }
+
+    public static void fflush(int x){
         System.out.print(x);
     }
 

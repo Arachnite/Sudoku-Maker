@@ -40,7 +40,9 @@ public class boardMaker extends Constants{
     }
 
     public static void printBoard(){
+        printf("\n   1 2 3   4 5 6   7 8 9\n");
         for (int i = 0; i < theBoard.length; i++) {
+            fflush(i + 1+ "  ");
             for (int o = 0; o < theBoard[i].length; o++) {
                 fflush(theBoard[i][o] + " ");
                 if (o == 2 || o == 5) {
@@ -49,7 +51,7 @@ public class boardMaker extends Constants{
             }
             printf("");
             if(i == 2 || i == 5) {
-                printf("- - - + - - - + - - -");
+                printf("   - - - + - - - + - - -");
             }
         }
     }
