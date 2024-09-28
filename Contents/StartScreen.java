@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class StartScreen extends Constants{
     
-    public static void printStartScreen() throws InterruptedException {
+    public static void printStartScreen() {
         for (int i = 0; i <= startMessage.length - 1; i++) {
             if (i == startMessage.length - 1) {
-                Thread.sleep(3000);
+
             }
             printf(startMessage[i]);
         }
