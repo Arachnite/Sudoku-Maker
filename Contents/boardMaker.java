@@ -3,7 +3,7 @@
 //import java.util.Arrays;
 
 public class BoardMaker extends Constants {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         StartScreen.printStartScreen();
         while (startString.equals("0")){
