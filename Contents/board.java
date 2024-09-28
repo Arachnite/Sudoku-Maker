@@ -3,9 +3,11 @@
 
 public class board extends Constants {
     public static void main(String[] args) {
-        boardMaker.printBoard();
+        BoardMaker.printBoard();
     }
 
 
-    public static void makeAlgorithm()
+    public static void makeAlgorithm(){
+        
+    }
 }
