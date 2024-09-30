@@ -3,7 +3,7 @@
 
 public class board extends Constants {
     public static void main(String[] args) {
-        BoardMaker.printBoard();
+        boardMaker.printBoard();
     }
 
 

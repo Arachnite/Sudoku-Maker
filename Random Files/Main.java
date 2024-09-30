@@ -19,7 +19,6 @@ public class Main {
             }
             
         }
-
     }
 
     // Compare a two values in the 2D array
