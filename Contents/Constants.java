@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-//import java.util.Arrays;
 
 public class Constants {
 
@@ -10,7 +9,7 @@ public class Constants {
     //Start screen variables
     public static String startString = "0";
     public static String[] startMessage = {
-        ("Welcome to Sudoku \n"),
+        ("\nWelcome to Sudoku \n"),
         ("Rules:"),
         ("Fill in the 3x3 by 3x3 box with all the numbers"),
         ("Numbers may not repeat per Row, Column or Box"),
@@ -57,4 +56,6 @@ public class Constants {
 
     //Physical Board
     public static int[][] theBoard = new int[9][9];
+    public static int min = 1;
+    public static int max = 9;
 }

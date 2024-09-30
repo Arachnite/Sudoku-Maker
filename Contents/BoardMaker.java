@@ -2,7 +2,7 @@
 //import java.util.Scanner;
 //import java.util.Arrays;
 
-public class boardMaker extends Constants {
+public class BoardMaker extends Constants {
     public static void main(String[] args) {
 
         StartScreen.printStartScreen();
@@ -41,7 +41,7 @@ public class boardMaker extends Constants {
 
     public static void printBoard() {
         printf("\n   1 2 3   4 5 6   7 8 9\n");
-        for (int i = 0; i < theBoard.length; i++) {
+        for (int i = 0; i <= theBoard.length - 1; i++) {
             fflush(i + 1+ "  ");
             for (int o = 0; o < theBoard[i].length; o++) {
                 fflush(theBoard[i][o] + " ");
@@ -54,5 +54,6 @@ public class boardMaker extends Constants {
                 printf("   - - - + - - - + - - -");
             }
         }
+        printf("");
     }
 }
