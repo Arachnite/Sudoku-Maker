@@ -56,6 +56,7 @@ public class Constants {
 
     //Physical Board
     public static int[][] theBoard = new int[9][9];
+    public static boolean checkNumber = true;
     public static int min = 1;
     public static int max = 9;
 }

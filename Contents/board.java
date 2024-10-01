@@ -3,7 +3,7 @@
 import java.util.Arrays;
 import java.lang.Math;
 
-public class board extends Constants {
+public class Board extends Constants {
     public static void main(String[] args) {
         makeAlgorithm();
         BoardMaker.printBoard();
@@ -19,10 +19,19 @@ public class board extends Constants {
     }
 
     public static int getNumber(int i, int o) {
+        int x = (int)(Math.random() * (max - min) - min);
         while (true) { 
             for (int p = 0; p <= 8; p++) {
-                
+                if (x == theBoard[i][p]) {
+                    checkNumber = false;
+                }
+                if (x == theBoard[p][o]) {
+                    checkNumber = false;
+                }
             }
+        }
+        if (checkNumber == true) {
+            return x;
         }
     }
 }
