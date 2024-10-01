@@ -1,9 +1,9 @@
 
 //import java.util.scanner;
-import java.util.Arrays;
 import java.lang.Math;
+import Contents.Constants;
 
-public class Board extends Constants {
+public class board extends Constants {
     public static void main(String[] args) {
         makeAlgorithm();
         BoardMaker.printBoard();
@@ -29,9 +29,12 @@ public class Board extends Constants {
                     checkNumber = false;
                 }
             }
-        }
-        if (checkNumber == true) {
-            return x;
+            
+                //checkNumber = checkBox();
+
+            if (checkNumber == true) {
+                return x;
+            }
         }
     }
 }
