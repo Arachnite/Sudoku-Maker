@@ -1,7 +1,7 @@
 
 //import java.util.scanner;
 import java.lang.Math;
-import Contents.Constants;
+//import Contents.Constants;
 
 public class board extends Constants {
     public static void main(String[] args) {
