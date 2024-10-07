@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 public class Constants {
@@ -55,8 +56,20 @@ public class Constants {
     public static int numbersGiven;
 
     //Physical Board
-    public static int[][] theBoard = new int[9][9];
+    public static int[][] theBoard = new int[][] {
+        {1, 2, 3, 4, 5, 6, 7 ,8, 9},
+        {4, 5, 6, 7 ,8, 9, 1, 2, 3},
+        {7, 8, 9, 1, 2, 3, 4, 5, 6},
+        {2, 3, 4, 5, 6, 7 ,8, 9, 1},
+        {5, 6, 7 ,8, 9, 1, 2, 3, 4},
+        {8, 9, 1, 2, 3, 4, 5, 6, 7},
+        {3, 4, 5, 6, 7 ,8, 9, 1, 2},
+        {6, 7 ,8, 9, 1, 2, 3, 4, 5},
+        {9, 1, 2, 3, 4, 5, 6, 7 ,8}
+    };
+    public static int randomizer;
     public static boolean checkNumber = true;
+    public static boolean checkBoard = true;
     public static int min = 1;
     public static int max = 9;
     public static int number;
