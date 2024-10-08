@@ -10,6 +10,6 @@ public class board extends Constants {
 
 
     public static void makeAlgorithm() {
-        
+        randomizer = new int[]{randomNumber(1, 3), randomNumber(1, 3)};
     }
 }

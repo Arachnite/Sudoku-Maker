@@ -6,7 +6,7 @@ public class DifficultyManager extends Constants{
 
     //Gets the difficulty of the Sudoku Board
     public static String getDifficulty(String difficultyInput, String difficultyFinal) {
-        printf("\nSelect a difficulty (Easy, Medium, Hard):");
+        printf("\nSelect a difficulty (Easy, Medium, Hard):\n");
         while (true) {
             difficultyInput = difficultyReader(sc);
             difficultyFinal = difficultyFinalConstant(difficultyInput);

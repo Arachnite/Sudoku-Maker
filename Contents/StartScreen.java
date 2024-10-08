@@ -8,7 +8,7 @@ public class StartScreen extends Constants{
             if (i == startMessage.length - 1) {
 
             }
-            printf(startMessage[i]);
+            printf(startMessage[i] + "\n");
         }
     }
 

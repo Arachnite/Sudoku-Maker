@@ -1,11 +1,17 @@
 
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Constants {
 
     //Scanner variable for all files
     public static Scanner sc = new Scanner(System.in);
+
+    //Random Number function for all files
+    public static int randomNumber(int min, int max) {
+        return (int)(Math.random() * (max - min) + min);
+    }
 
     //Start screen variables
     public static String startString = "0";
@@ -29,26 +35,18 @@ public class Constants {
 
     //Print methods
     public static void printf(String x){
-        System.out.println(x);
-    }
-
-    public static void printf(int x){
-        System.out.println(x);
-    }
-
-    public static void printf(float x){
-        System.out.println(x);
-    }
-
-    public static void printf(double x){
-        System.out.println(x);
-    }
-
-    public static void fflush(String x){
         System.out.print(x);
     }
 
-    public static void fflush(int x){
+    public static void printf(int x){
+        System.out.print(x);
+    }
+
+    public static void printf(float x){
+        System.out.print(x);
+    }
+
+    public static void printf(double x){
         System.out.print(x);
     }
 
@@ -67,10 +65,6 @@ public class Constants {
         {6, 7 ,8, 9, 1, 2, 3, 4, 5},
         {9, 1, 2, 3, 4, 5, 6, 7 ,8}
     };
-    public static int randomizer;
-    public static boolean checkNumber = true;
-    public static boolean checkBoard = true;
-    public static int min = 1;
-    public static int max = 9;
+    public static int[] randomizer = new int[2];
     public static int number;
 }

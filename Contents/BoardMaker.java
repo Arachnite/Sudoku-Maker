@@ -38,20 +38,20 @@ public class BoardMaker extends Constants {
     }
 
     public static void printBoard() {
-        printf("\n   1 2 3   4 5 6   7 8 9\n");
+        printf("\n   1 2 3   4 5 6   7 8 9\n\n");
         for (int i = 0; i <= theBoard.length - 1; i++) {
-            fflush(i + 1+ "  ");
+            printf(i + 1+ "  ");
             for (int o = 0; o < theBoard[i].length; o++) {
-                fflush(theBoard[i][o] + " ");
+                printf(theBoard[i][o] + " ");
                 if (o == 2 || o == 5) {
-                    fflush("| ");
+                    printf("| ");
                 }
             }
-            printf("");
+            printf("\n");
             if(i == 2 || i == 5) {
-                printf("   - - - + - - - + - - -");
+                printf("   - - - + - - - + - - -\n");
             }
         }
-        printf("");
+        printf("\n");
     }
 }
