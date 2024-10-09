@@ -10,7 +10,7 @@ public class Constants {
 
     //Random Number function for all files
     public static int randomNumber(int min, int max) {
-        return (int)(Math.random() * (max - min) + min);
+        return (int)((Math.random() + 0.1)* (max - min) + min);
     }
 
     //Start screen variables
@@ -65,6 +65,7 @@ public class Constants {
         {6, 7 ,8, 9, 1, 2, 3, 4, 5},
         {9, 1, 2, 3, 4, 5, 6, 7 ,8}
     };
-    public static int[] randomizer = new int[2];
+    public static int[][] randomizer = new int[0][0];
+    public static int[] randomStorage = new int[9];
     public static int number;
 }
