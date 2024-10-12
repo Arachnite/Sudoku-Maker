@@ -13,9 +13,10 @@ public class board extends Constants {
         randomizer = new int[][] {
             {randomNumber(1, 3), randomNumber(1, 3), randomNumber(1, 3)}, 
             {randomNumber(1, 3), randomNumber(1, 3), randomNumber(1, 3)}, 
-            {randomNumber(1, 3), randomNumber(1, 3), randomNumber(1, 3)}, 
-            {randomNumber(1, 3), randomNumber(1, 3), randomNumber(1, 3)}
+            {randomNumber(1, 3), randomNumber(1, 3)}, 
+            {randomNumber(1, 3), randomNumber(1, 3)}
         };
+
         if(randomizer[0][0] == 1) {
             randomStorage = theBoard[2];
             theBoard[2] = theBoard[1];
@@ -52,22 +53,24 @@ public class board extends Constants {
             theBoard[8] = randomStorage;
         }
 
-        // if(randomizer[1] == 1) {
-
-        // } else if(randomizer[1] == 2) {
-            
-        // }
-
-        // if(randomizer[2] == 1) {
-
-        // } else if(randomizer[2] == 2) {
-            
-        // }
-
-        // if(randomizer[3] == 1) {
-
-        // } else if(randomizer[3] == 2) {
-
-        // }
+        if(randomizer[1][0] == 1) {
+            printf(randomizer[1][0]);
+            for(int i = 0; i <= theBoard[2].length - 1; i++) {
+                randomStorage[i] = theBoard[i][2];
+                BoardMaker.printBoard();
+            }
+            for(int i = 0; i <= theBoard[1].length - 1; i++) {
+                theBoard[i][2] = theBoard[i][1];
+                BoardMaker.printBoard();
+            }
+            for(int i = 0; i <= theBoard[1].length - 1; i++) {
+                theBoard[i][2] = theBoard[i][0];
+                BoardMaker.printBoard();
+            }
+            for(int i = 0; i <= theBoard[1].length - 1; i++) {
+                theBoard[i][0] = randomStorage[i];
+                BoardMaker.printBoard();
+            }
+        }
     }
 }
