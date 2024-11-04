@@ -1,24 +1,6 @@
 
 
 public class BoardMaker extends Constants {
-    public static void main(String[] args) {
-
-        StartScreen.printStartScreen();
-        while (startString.equals("0")){
-            startString = StartScreen.checkStart();
-            if (startString != "0") {
-                break;
-            }
-        }
-
-        if (startString.equals("START")) {
-            difficultyFinal = DifficultyManager.getDifficulty(difficultyInput, difficultyFinal).toLowerCase();
-            difficultyFinal = difficultyFinal.substring(0, 1).toUpperCase() + difficultyFinal.substring(1, difficultyFinal.length());
-
-            numbersGiven = getNumbersGiven(difficultyFinal);
-            printBoard();
-        }
-    }
 
     //Gets the amount of numbers that will be given
     public static int getNumbersGiven(String difficultyFinal) { 
@@ -40,7 +22,7 @@ public class BoardMaker extends Constants {
     public static void printBoard() {
         printf("\n   1 2 3   4 5 6   7 8 9\n\n");
         for (int i = 0; i <= theBoard.length - 1; i++) {
-            printf(i + 1+ "  ");
+            printf(i + 1 + "  ");
             for (int o = 0; o < theBoard[i].length; o++) {
                 printf(theBoard[i][o] + " ");
                 if (o == 2 || o == 5) {

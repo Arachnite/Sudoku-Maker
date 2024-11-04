@@ -1,6 +1,6 @@
 
 
-import java.lang.Math;
+//import java.lang.Math;
 
 public class board extends Constants {
     public static void main(String[] args) {
@@ -11,8 +11,8 @@ public class board extends Constants {
 
     public static void makeAlgorithm() {
         randomizer = new int[][] {
-            {randomNumber(1, 3), randomNumber(1, 3), randomNumber(1, 3)}, 
-            {randomNumber(1, 3), randomNumber(1, 3), randomNumber(1, 3)}, 
+            {1, 1, 1}, 
+            {1, randomNumber(1, 3), randomNumber(1, 3)}, 
             {randomNumber(1, 3), randomNumber(1, 3)}, 
             {randomNumber(1, 3), randomNumber(1, 3)}
         };
@@ -54,88 +54,102 @@ public class board extends Constants {
         }
 
         //Column Algorithm
-        if(randomizer[1][0] == 1) {
-            for(int i = 0; i <= 8; i++) {
-                randomStorage[i] = theBoard[i][2];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][2] = theBoard[i][1];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][1] = theBoard[i][0];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][0] = randomStorage[i];
-            }
-        } else if(randomizer[1][0] == 2) {
-            for(int i = 0; i <= 8; i++) {
-                randomStorage[i] = theBoard[i][0];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][0] = theBoard[i][1];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][1] = theBoard[i][2];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][2] = randomStorage[i];
-            }
-        }
+        // if(randomizer[1][0] == 1) {
+        //     for(int i = 0; i <= randomStorage.length - 1; i++) {
+        //         printf(theBoard[i][2]);
+        //     }
+        //     printf("\n");
+        //     for(int i = 0; i <= randomStorage.length - 1; i++) {
+        //         printf(theBoard[i][1]);
+        //     }
+        //     printf("\n");
+        //     for(int i = 0; i <= randomStorage.length - 1; i++) {
+        //         printf(theBoard[i][0]);
+        //     }
+        //     printf("\n");
 
-        if(randomizer[1][1] == 1) {
-            for(int i = 0; i <= 8; i++) {
-                randomStorage[i] = theBoard[i][5];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][5] = theBoard[i][4];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][4] = theBoard[i][3];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][3] = randomStorage[i];
-            }
-        } else if(randomizer[1][1] == 2) {
-            for(int i = 0; i <= 8; i++) {
-                randomStorage[i] = theBoard[i][3];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][3] = theBoard[i][4];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][4] = theBoard[i][5];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][5] = randomStorage[i];
-            }
-        }
+        //     for(int i = 0; i <= 8; i++) {
+        //         randomStorage[i] = theBoard[i][2];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][2] = theBoard[i][1];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][1] = theBoard[i][0];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][0] = randomStorage[i];
+        //     }
 
-        if(randomizer[1][2] == 1) {
-            for(int i = 0; i <= 8; i++) {
-                randomStorage[i] = theBoard[i][8];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][8] = theBoard[i][7];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][7] = theBoard[i][6];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][6] = randomStorage[i];
-            }
-        } else if(randomizer[1][2] == 2) {
-            for(int i = 0; i <= 8; i++) {
-                randomStorage[i] = theBoard[i][6];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][6] = theBoard[i][7];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][7] = theBoard[i][8];
-            }
-            for(int i = 0; i <= 8; i++) {
-                theBoard[i][8] = randomStorage[i];
-            }
-        }
+        // } else if(randomizer[1][0] == 2) {
+        //     for(int i = 0; i <= 8; i++) {
+        //         randomStorage[i] = theBoard[i][0];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][0] = theBoard[i][1];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][1] = theBoard[i][2];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][2] = randomStorage[i];
+        //     }
+        // }
+
+        // if(randomizer[1][1] == 1) {
+        //     for(int i = 0; i <= 8; i++) {
+        //         randomStorage[i] = theBoard[i][5];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][5] = theBoard[i][4];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][4] = theBoard[i][3];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][3] = randomStorage[i];
+        //     }
+        // } else if(randomizer[1][1] == 2) {
+        //     for(int i = 0; i <= 8; i++) {
+        //         randomStorage[i] = theBoard[i][3];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][3] = theBoard[i][4];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][4] = theBoard[i][5];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][5] = randomStorage[i];
+        //     }
+        // }
+
+        // if(randomizer[1][2] == 1) {
+        //     for(int i = 0; i <= 8; i++) {
+        //         randomStorage[i] = theBoard[i][8];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][8] = theBoard[i][7];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][7] = theBoard[i][6];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][6] = randomStorage[i];
+        //     }
+        // } else if(randomizer[1][2] == 2) {
+        //     for(int i = 0; i <= 8; i++) {
+        //         randomStorage[i] = theBoard[i][6];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][6] = theBoard[i][7];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][7] = theBoard[i][8];
+        //     }
+        //     for(int i = 0; i <= 8; i++) {
+        //         theBoard[i][8] = randomStorage[i];
+        //     }
+        //}
     }
 }

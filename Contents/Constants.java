@@ -16,7 +16,7 @@ public class Constants {
     //Start screen variables
     public static String startString = "0";
     public static String[] startMessage = {
-        ("\nWelcome to Sudoku \n"),
+        ("\nWelcome to Sudoku\n"),
         ("Rules:"),
         ("Fill in the 3x3 by 3x3 box with all the numbers"),
         ("Numbers may not repeat per Row, Column or Box"),
