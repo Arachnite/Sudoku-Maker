@@ -54,34 +54,31 @@ public class board extends Constants {
         }
 
         //Column Algorithm
-        // if(randomizer[1][0] == 1) {
-        //     for(int i = 0; i <= randomStorage.length - 1; i++) {
-        //         printf(theBoard[i][2]);
-        //     }
-        //     printf("\n");
-        //     for(int i = 0; i <= randomStorage.length - 1; i++) {
-        //         printf(theBoard[i][1]);
-        //     }
-        //     printf("\n");
-        //     for(int i = 0; i <= randomStorage.length - 1; i++) {
-        //         printf(theBoard[i][0]);
-        //     }
-        //     printf("\n");
+        if(randomizer[1][0] == 1) {
+            for(int i = 0; i <= randomStorage.length - 1; i++) {
+                printf(theBoard[i][2]);
+            }
+            for(int i = 0; i <= randomStorage.length - 1; i++) {
+                printf(theBoard[i][1]);
+            }
+            for(int i = 0; i <= randomStorage.length - 1; i++) {
+                printf(theBoard[i][0]);
+            }
 
-        //     for(int i = 0; i <= 8; i++) {
-        //         randomStorage[i] = theBoard[i][2];
-        //     }
-        //     for(int i = 0; i <= 8; i++) {
-        //         theBoard[i][2] = theBoard[i][1];
-        //     }
-        //     for(int i = 0; i <= 8; i++) {
-        //         theBoard[i][1] = theBoard[i][0];
-        //     }
-        //     for(int i = 0; i <= 8; i++) {
-        //         theBoard[i][0] = randomStorage[i];
-        //     }
+            for(int i = 0; i <= 8; i++) {
+                randomStorage[i] = theBoard[i][2];
+            }
+            for(int i = 0; i <= 8; i++) {
+                theBoard[i][2] = theBoard[i][1];
+            }
+            for(int i = 0; i <= 8; i++) {
+                theBoard[i][1] = theBoard[i][0];
+            }
+            for(int i = 0; i <= 8; i++) {
+                theBoard[i][0] = randomStorage[i];
+            }
 
-        // } else if(randomizer[1][0] == 2) {
+        } // else if(randomizer[1][0] == 2) {
         //     for(int i = 0; i <= 8; i++) {
         //         randomStorage[i] = theBoard[i][0];
         //     }
@@ -150,6 +147,6 @@ public class board extends Constants {
         //     for(int i = 0; i <= 8; i++) {
         //         theBoard[i][8] = randomStorage[i];
         //     }
-        //}
+        // }
     }
 }

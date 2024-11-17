@@ -6,9 +6,9 @@ public class Deploy {
     public static void main(String[] args) {
 
         StartScreen.printStartScreen();
-        while (StartScreen.startString.equals("0")){
+        while (StartScreen.startString.equals("")){
             StartScreen.startString = StartScreen.checkStart();
-            if (StartScreen.startString != "0") {
+            if (StartScreen.startString != "") {
                 break;
             }
         }

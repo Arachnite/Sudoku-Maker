@@ -14,7 +14,7 @@ public class Constants {
     }
 
     //Start screen variables
-    public static String startString = "0";
+    public static String startString = "";
     public static String[] startMessage = {
         ("\nWelcome to Sudoku\n"),
         ("Rules:"),
